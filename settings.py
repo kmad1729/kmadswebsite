@@ -1,0 +1,1 @@
+from kmadswebsite.settings import *
