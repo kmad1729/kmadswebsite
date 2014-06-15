@@ -54,3 +54,7 @@ docs/_build/
 
 #Appentin
 .gaedata
+
+#super secred stuff
+keys.py
+
