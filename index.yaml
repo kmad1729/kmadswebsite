@@ -38,7 +38,19 @@ indexes:
   - name: __key__
     direction: desc
 
+- kind: kmadswebsite_mybook
+  properties:
+  - name: mybook
+  - name: __key__
+    direction: desc
+
 - kind: kmadswebsite_mymovie
   properties:
+  - name: __key__
+    direction: desc
+
+- kind: kmadswebsite_mymovie
+  properties:
+  - name: mymovie
   - name: __key__
     direction: desc
