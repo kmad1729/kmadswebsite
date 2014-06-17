@@ -3,23 +3,31 @@
     </head>
     <body>
         <h2>
-            About Me
+            Kashyap Maduri
         </h2>
         <p>
             Hi! I am Kashyap. I work as a Software Engineer for Cisco Systems, San Francisco Bay Area. I like writing code and automating things. In my spare time, I write python code, run long distances, bike, read books and watch movies.
         </p>
-        <p>
-            Here is a list of
-        </p>
+        Here is a list of
         <ul>
             <li>
                 <p>
                     Books I read:
+                    <ol>
+                        {% for book in my_books %}
+                            <li><a href="{{ book.book_url }}">{{ book.book_name }}</a> </li>
+                        {% endfor %}
+                    </ol>
                 </p>
             </li>
             <li>
                 <p>
                     Movies I watched:
+                    <ol>
+                        {% for movie in my_movies %}
+                            <li><a href="{{ movie.movie_url }}">{{ movie.movie_name }}</a> </li>
+                        {% endfor %}
+                    </ol>
                 </p>
             </li>
             <li>
@@ -38,5 +46,7 @@
                 </ul>
             </li>
         </ul>
+        <p> This website is a work in progress. </p>
     <body>
+    <footer> Date on the web server is <strong>{{ server_date|date:"M d, Y" }} </strong> </footer>
 </html>

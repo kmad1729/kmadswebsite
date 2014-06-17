@@ -32,3 +32,13 @@ indexes:
   - name: username
   - name: __key__
     direction: desc
+
+- kind: kmadswebsite_mybook
+  properties:
+  - name: __key__
+    direction: desc
+
+- kind: kmadswebsite_mymovie
+  properties:
+  - name: __key__
+    direction: desc
