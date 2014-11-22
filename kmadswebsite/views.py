@@ -16,3 +16,6 @@ def index_view(request):
     page_info_dict["server_date"] = datetime.now()
 
     return render(request, 'about_me.html', page_info_dict)
+
+def simple_markers(request):
+    return render(request, 'marker_simple.html')
