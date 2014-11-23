@@ -1,3 +1,5 @@
+'a utility script to upload local book data to the remote database'
+
 import json
 from dateutil.parser import parse
 
@@ -5,6 +7,7 @@ from kmadswebsite.models import MyBook
 
 
 def save_book_data(book_data_fname):
+    'save the book data using the argument as a json file name'
     book_data = []
     with open(book_data_fname, 'r') as f:
         book_data = json.load(f)
